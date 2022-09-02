@@ -1,6 +1,10 @@
 ---
 title: JavaScript
+date: 2022-09-03
+tags:
+- 前端
 ---
+
 ## 初识JavaScript
 
 ### JavaScript是什么
@@ -41,11 +45,11 @@ JS脚本语言--编程类语言
 
 ### JS的组成
 
-<img src="javascript.assets/image-20210125211534700.png" alt="image-20210125211534700" style="zoom:80%;" />
+![JavaScript](../images/javascript/image-20210125211534700.png)
 
 1. ECMAScript是由ECMA国际(原欧洲计算机制造商协会)进行标准化的一门编程语言，这种语言在万维网上应用广泛，它往往被称为JavaScript或JScript，但实际上后两者是ECMAScript语言的实现和扩展
 
-<img src="javascript.assets/image-20210125211919218.png" alt="image-20210125211919218" style="zoom:80%;" />
+![ECMAScript](../images/javascript/image-20210125211919218.png)
 
 ECMAScript:规定了JS的编程语法和基础核心知识，是所有浏览器厂商共同遵守的一套JS语法工业标准。
 
@@ -472,9 +476,9 @@ console.log(123 || 456 || 789); // 123
 
 ## 流程控制
 
-主要有三种结构，分别是==顺序结构==、==分支结构==和==循环结构==
+主要有三种结构，分别是**顺序结构**、**分支结构**和**循环结构**
 
-<img src="javascript.assets/image-20210126223848667.png" alt="image-20210126223848667" style="zoom:80%;" />
+![流程控制](../images/javascript/image-20210126223848667.png)
 
 ### 顺序结构
 
@@ -484,8 +488,8 @@ console.log(123 || 456 || 789); // 123
 
 JS语言提供了两种分支结构语句
 
-+ ==if语句==
-+ ==switch语句==
++ **if语句**
++ **switch语句**
 
 #### switch语句
 
@@ -540,7 +544,7 @@ var arr1 = [1,2,'abc',true];
 + 声明数组并赋值称为数组的初始化
 + 数组的字面量是方括号{}
 
-###数组长度
+### 数组长度
 
 `arr.length`
 
@@ -664,9 +668,9 @@ JS代码是由浏览器中的JS解析器来执行的。JS解析器在运行JS代
 
 预解析分为 变量预解析(变量提升) 和 函数预解析(函数提升)
 
-==变量提升== 就是把所有的变量声明提升到当前作用域最前面 不提升赋值操作
+**变量提升:**就是把所有的变量声明提升到当前作用域最前面 不提升赋值操作
 
-==函数提升== 就是把所有的函数声明提升到当前作用域的最前面 不调用函数
+**函数提升:** 就是把所有的函数声明提升到当前作用域的最前面 不调用函数
 
 函数表达式 调用必须写在函数表达式的下面
 
@@ -895,11 +899,11 @@ arr.sort(function(a,b) {
 
 ### 字符串对象
 
-#### ==基本包装类型==
+#### **基本包装类型**
 
 为了方便操作基本数据类型，JavaScript提供了三个特殊的引用类型：`String` `Number` `Boolean` 
 
-==基本包装类型==就是把简单数据类型包装成为复杂数据类型，这样基本数据类型就有了属性和方法
+**基本包装类型**就是把简单数据类型包装成为复杂数据类型，这样基本数据类型就有了属性和方法
 
 #### 字符串的不可变
 
@@ -937,7 +941,7 @@ arr.sort(function(a,b) {
 
 JS的组成
 
-<img src="javascript.assets/image-20210131191149486.png" alt="image-20210131191149486" style="zoom:80%;" />
+![JS的组成](../images/javascript/image-20210131191149486.png)
 
 + Web APIs 是W3C组织的标准
 + Web APIs 主要学习DOM和BOM
@@ -948,7 +952,7 @@ JS的组成
 
 Web API 是浏览器提供的一套操作浏览器功能和页面元素的API(BOM和DOM)
 
-==MDN 详细API:(https://developer.mozilla.org/zh-CN/docs/Web/API)==
+**MDN 详细API:(https://developer.mozilla.org/zh-CN/docs/Web/API)**
 
 ### DOM
 
@@ -958,13 +962,13 @@ W3C已经定义了一系列的DOM接口，通过这些DOM接口可以改变网�
 
 #### DOM树
 
-<img src="javascript.assets/image-20210131192721352.png" alt="image-20210131192721352" style="zoom:80%;" />
+![DOM树](../images/javascript/image-20210131192721352.png)
 
 + 文档：一个页面就是一个文档，DOM中使用document表示
 + 元素：页面中所有标签都是元素，DOM中使用element表示
 + 节点：网页中的所有内容都是节点(标签、属性、文本、注释等)，DOM中使用node表示
 
-==DOM把以上内容都看做是对象==
+**DOM把以上内容都看做是对象**
 
 #### 获取网页元素
 
@@ -1007,7 +1011,7 @@ for (var i = 0; i < lis.length; i++) {
 }
 ```
 
-==注意：==
+**注意：**
 
 1. 因为得到的是一个对象的集合，所以想要操作里面的元素就需要遍历
 2. 得到元素对象是动态的
@@ -1025,7 +1029,7 @@ var ol = document.getElementById('ol');
 console.log(ol.getElementsByTagName('li'));
 ```
 
-==注意：父元素必须是单个对象(必须指明是哪一个元素对象)。获取的时候不包括父元素自己==
+**注意：父元素必须是单个对象(必须指明是哪一个元素对象)。获取的时候不包括父元素自己**
 
 ##### 通过HTML5新增的方法获取
 
@@ -1075,7 +1079,7 @@ console.log(htmlEle);
 
 JavaScript有能力创建动态页面，而事件是可以被JavaScript侦测到的行为
 
-简单理解：==触发---响应机制==
+简单理解：**触发---响应机制**
 
 网页中的每个元素都可以产生某些可以触发JavaScript的事件，例如，可以在用户点击某按钮时产生一个事件，然后去执行某些操作
 
@@ -1091,7 +1095,7 @@ btn.onclick = function() {
 }
 ```
 
-==执行事件的步骤==
+**执行事件的步骤**
 
 1. 获取事件源
 2. 注册事件(绑定事件)
@@ -1231,7 +1235,7 @@ element.className //类名样式操作
 
 ##### 排他思想
 
-![image-20210208224048574](javascript.assets/image-20210208224048574.png)
+![排他思想](../images/javascript/image-20210208224048574.png)
 
 如果有同一组元素，想要某一个元素实现某种样式，需要用到循环的排他思想
 
@@ -1364,7 +1368,7 @@ H5规定自定义属性`data-`开头作为属性名并且赋值
 
 HTML DOM树中的所有节点均可通过JS进行访问，所有HTML元素(节点)均可被修改，也可以创建或删除
 
-![image-20210212181320023](javascript.assets/image-20210212181320023.png)
+![节点概述](../images/javascript/image-20210212181320023.png)
 
 一般情况下，节点至少拥有`nodeType`(节点类型)、`nodeName`(节点名称)和`nodeValue`(节点值)这三个基本属性
 
@@ -1403,8 +1407,6 @@ for (var i = 0; i < ul.childNodes.length; i++) {
 }
 ```
 
-
-
 ```javascript
 parentNode.children   (非标准)
 ```
@@ -1413,15 +1415,11 @@ parentNode.children   (非标准)
 
 虽然children是一个非标准，但是得到了各个浏览器的支持
 
-
-
 ```javascript
 parentNode.firstChild
 ```
 
 `firstChild`返回第一个子节点，找不到则返回null。同样，也是包含所有的节点
-
-
 
 ```javascript
 parentNode.lastChild
@@ -1429,15 +1427,11 @@ parentNode.lastChild
 
 `lastChild`返回最后一个子节点，找不到则返回null。同样，也是包含所有的节点
 
-
-
 ```javascript
 parent.firstElementChild
 ```
 
 返回第一个子元素节点，找不到则返回null
-
-
 
 ```javascript
 parent.lastElementChild
@@ -1455,23 +1449,17 @@ node.nextSibling
 
 返回当前元素的下一个兄弟节点，找不到则返回null。同样，也是<font color=red>包含所有的节点</font>
 
-
-
 ```]
 node.previousSibling
 ```
 
 返回当前元素上一个兄弟节点，找不到则返回null。同样，也是<font color=red>包含所有的节点</font>
 
-
-
 ```javascript
 node.nextElementSibling
 ```
 
 返回当前元素下一个兄弟元素节点，找不到则返回null。
-
-
 
 ```
 node.previousElementSibling
@@ -1695,7 +1683,7 @@ DOM事件流分为3个阶段：
 + 事件冒泡：IE最早提出，事件开始时由最具体的元素接收，然后逐级向上传播到DOM最顶层节点的过程
 + 事件捕获：网景最早提出，由DOM最顶层节点开始，然后逐级向下传播到最具体的元素接收的过程
 
-![image-20210317213821466](javascript.assets/image-20210317213821466.png)
+![冒泡](../images/javascript/image-20210317213821466.png)
 
 注意：
 
@@ -1871,7 +1859,7 @@ MouseEvent和键盘事件对象KeyboardEvent
 | `onkeydown`  | 某个键盘按键被按下时触发                                     |
 | `onkeypress` | 某个键盘按键被按下时 触发 但是它不识别功能键 比如 ctrl shift 箭头等 |
 
-三个事件的执行顺序： keydown :arrow_right: keypress :arrow_right: keyup
+三个事件的执行顺序： keydown => keypress => keyup
 
 ###### 键盘事件对象
 
@@ -2101,7 +2089,7 @@ JS的异步是通过回调函数实现的。
 2. 异步任务(回调函数)放入任务队列中
 3. 一旦执行栈中的所有同步任务执行完毕，系统就会按次序读取任务队列中的异步任务，于是被读取的异步任务结束等待状态，进入执行栈，开始执行
 
-![image-20210325201532961](javascript.assets/image-20210325201532961.png)
+![JS执行机制](../images/javascript/image-20210325201532961.png)
 
 由于主线程不断地重复获得任务、执行任务、再获取任务、再执行，所以这种机制被称为事件循环(event loop)。
 
@@ -2635,7 +2623,7 @@ JavaScript规定，每一个构造函数都有一个prototype属性，指向另�
 + `__proto__`对象原型和原型对象prototype是等价的
 + `__proto__`对象原型的意义就在于为对象的查找机制提供一个方向，或者说一条路线，但是它是一个非标准属性，因此实际开发中，不可以直接使用这个属性，它只是内部指向原型对象prototype
 
-![image-20210412213259955](javascript.assets/image-20210412213259955.png)
+![对象原型](../images/javascript/image-20210412213259955.png)
 
 ##### constructor构造函数
 
@@ -2645,7 +2633,7 @@ constructor主要用于记录该对象引用于哪个构造函数，它可以让
 
 ##### 构造函数、实例、原型对象三者之间的关系
 
-![image-20210412215510199](javascript.assets/image-20210412215510199.png)
+![构造函数、实例、原型对象三者之间的关系](../images/javascript/image-20210412215510199.png)
 
 (1) 构造函数有原型对象prototype
 
@@ -2657,7 +2645,7 @@ constructor主要用于记录该对象引用于哪个构造函数，它可以让
 
 ##### 原型链
 
-![image-20210412220338156](javascript.assets/image-20210412220338156.png)
+![原型链](../images/javascript/image-20210412220338156.png)
 
 ##### JavaScript的成员查找机制(规则)
 
@@ -2861,7 +2849,7 @@ var f = new Function('参数1', '参数2', ... ,'函数体');
 + 所有函数都是Function的实例(对象)
 + 函数也属于对象
 
-![image-20210417183800960](javascript.assets/image-20210417183800960.png)
+![函数的定义方式](../images/javascript/image-20210417183800960.png)
 
 ##### 函数的调用方式
 
